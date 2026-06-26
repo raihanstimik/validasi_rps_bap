@@ -1,31 +1,7 @@
 ```markdown
-# 📥 Panduan Instalasi Terpadu: Sistem Validasi RPS vs BAP
+#  Panduan Instalasi Terpadu: Sistem Validasi RPS vs BAP
 
-Dokumentasi ini wajib diikuti oleh seluruh anggota kelompok (Anggota 1-6) sebelum mulai menulis kode program. Panduan ini dibuat untuk memastikan environment pengembangan di setiap laptop seragam, guna menghindari error saat penggabungan kode (*code integration*).
-
----
-
-## 🐍 Langkah 1: Instalasi Python (Semua Anggota)
-
-### 🪟 Pengguna Windows
-1. Unduh installer resmi melalui tautan berikut: [python.org/downloads](https://www.python.org/downloads/).
-2. Buka file installer `.exe` yang sudah diunduh.
-3. **⚠️ PERINGATAN KRUSIAL:** Pada jendela pertama installer, pastikan Anda mencentang kotak opsi **`[x] Add python.exe to PATH`** di bagian paling bawah sebelum mengklik tombol instal.
-4. Klik **Install Now** dan tunggu hingga proses selesai.
-
-
-```
-
-*Atau, unduh paket instalasi resmi berformat `.pkg` melalui website Python.*
-
-> **💡 Cara Memverifikasi Berhasil atau Tidak:**
-> Buka Terminal / Command Prompt (CMD) di laptop Anda, lalu ketik perintah:
-> `python --version`
-> Jika muncul tulisan `Python 3.10.x` atau `Python 3.11.x`, berarti instalasi Anda telah sukses berjalan dengan benar.
-
----
-
-## 📦 Langkah 2: Instalasi Dependensi Library via PIP (Semua Anggota)
+## Langkah 1: Instalasi Dependensi Library via PIP (Semua Anggota)
 
 Untuk meminimalkan potensi kegagalan impor modul (*ModuleNotFoundError*) saat integrasi, **seluruh anggota wajib menginstal semua paket library di bawah ini**.
 
