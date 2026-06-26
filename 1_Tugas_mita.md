@@ -1,19 +1,15 @@
 # 🗂️ Spesifikasi Tugas Anggota 1: UI/UX & Main Interface (`main.py`)
 
 ## 🎯 Fokus Utama
-Membangun tampilan aplikasi (GUI) yang simple, minimalis, dan responsif menggunakan Tkinter grid layout, serta menggabungkan seluruh modul dari anggota lain ke dalam satu window utama.
+Membangun tampilan aplikasi (GUI) yang simple, minimalis, dan responsif menggunakan Tkinter grid layout,
 
-## 🛠️ Rincian Komponen GUI yang Harus Dibuat:
-1. **Window Utama (`tk.Tk`)**: Ukuran default `1100x650` piksel, warna latar belakang terang/bersih (`#F8F9FA`), dapat ditarik/diperbesar (resizable).
-2. **Header Panel**: Area atas dengan warna kontras profesional (`#1E3A8A`) berisi judul aplikasi yang tebal.
-3. **Control Panel**: Barisan tombol minimalis yang disusun secara horizontal:
-   - Tombol `📄 Load RPS (PDF)` (Warna Hijau) -> Terhubung ke fungsi Anggota 4.
-   - Tombol `📋 Upload BAP (PDF)` (Warna Ungu) -> Terhubung ke fungsi Anggota 4.
-   - Tombol `🔍 Proses Validasi` (Warna Biru) -> Terhubung ke fungsi Anggota 3.
-   - Tombol `📥 Cetak Laporan` (Warna Merah) -> Terhubung ke fungsi Anggota 5.
-4. **Main Output Area**: Menggunakan sistem kolom grid (`weight`) sehingga saat window diperbesar, area ini ikut melebar:
-   - **Sisi Kiri (Tabel `ttk.Treeview`)**: Memiliki kolom Pertemuan, Materi RPS, Materi BAP, Status, dan Keterangan. Wajib memiliki tag warna baris: Sesuai (Hijau Muda), Tidak Sesuai (Kuning Muda), Hilang (Merah Muda).
-
-## 📥 Input & Output Data:
-- **Input**: Klik tombol aksi dari user.
-- **Output**: Memperbarui baris data pada tabel Treeview dan mencetak baris log baru ke widget terminal.
+* **Komponen Spesifik yang Harus Dibuat:**
+    * **Main Window (`tk.Tk`)**: Batasan ukuran `1250x700` piksel, warna latar belakang abu-abu terang (`#F3F4F6`).
+    * **Left Panel (Form Input Manual BAP)**: `tk.LabelFrame` berisi:
+        * `Entry` No Sesi / Pertemuan.
+        * `DateEntry` (`tkcalendar`) untuk memilih **Tanggal Sesi Perkuliahan** secara visual.
+        * `Entry` Pokok Bahasan BAP.
+        * `Text` Materi BAP.
+        * Tombol `➕ Tambahkan BAP` dan `🧹 Bersihkan Form`.
+    * **Right Top Panel (Tabel Matriks Berkolom Tanggal)**: Komponen `ttk.Treeview` dengan kolom yang diperluas: `NO SESI`, `TANGGAL`, `POKOK BAHASAN (RPS)`, `MATERI (RPS)`, `POKOK BAHASAN (BAP)`, `MATERI (BAP)`, `STATUS`, dan `KETERANGAN`. Wajib memiliki tag warna baris otomatis (Hijau/Kuning/Merah).
+    * **Right Bottom Panel (Light Mode Live Log)**: Komponen `tk.Text` dengan latar belakang krem lembut (`#FFFBEB`) dan teks warna biru tua (`#1E3A8A`) untuk pelacakan sistem.
