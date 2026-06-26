@@ -1,4 +1,4 @@
-```markdown
+markdown
 #  Panduan Instalasi Terpadu: Sistem Validasi RPS vs BAP
 
 ## Langkah 1: Instalasi Dependensi Library via PIP (Semua Anggota)
