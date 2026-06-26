@@ -13,7 +13,6 @@ Membangun tampilan aplikasi (GUI) yang simple, minimalis, dan responsif mengguna
    - Tombol `📥 Cetak Laporan` (Warna Merah) -> Terhubung ke fungsi Anggota 5.
 4. **Main Output Area**: Menggunakan sistem kolom grid (`weight`) sehingga saat window diperbesar, area ini ikut melebar:
    - **Sisi Kiri (Tabel `ttk.Treeview`)**: Memiliki kolom Pertemuan, Materi RPS, Materi BAP, Status, dan Keterangan. Wajib memiliki tag warna baris: Sesuai (Hijau Muda), Tidak Sesuai (Kuning Muda), Hilang (Merah Muda).
-   - **Sisi Kanan (Live Terminal Log)**: Widget `tk.Text` dengan latar belakang hitam (`#111827`) dan teks hijau (`#10B981`) bergaya font `Consolas` untuk memantau aktivitas sistem.
 
 ## 📥 Input & Output Data:
 - **Input**: Klik tombol aksi dari user.
